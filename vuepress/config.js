@@ -1,9 +1,9 @@
-const dsalgJavaHspSC = require('../dsalg-java-hsp')
+const dsalgJavaHspSC = require('../java-study')
 
 module.exports = {
   title: '数据结构与算法 系列教程（笔记）',
   description: '数据结构与算法 系列教程学习笔记',
-  base: '/dsalg-tutorial/', // gh-page 中是增加了项目名
+  base: '/java-study/', // gh-page 中是增加了项目名
   dest: 'build/.vuepress/dist',  // build 时构建的文件放在那里？
   host: 'localhost', // dev 的域名
   port: 8080, // dev 的端口
@@ -45,11 +45,11 @@ module.exports = {
     // 页面顶部的导航栏：可以根据自己的需要制定
     nav: [
       { text: 'Home', link: '/' },
-      { text: '图解 Java 数据结构和算法', link: '/dsalg-java-hsp/' },
+      { text: '图解 Java 数据结构和算法', link: '/java-study/' },
       { text: '笔记精选汇总', link: 'https://github.com/mei851263117/java-study' }
     ],
     sidebar: {  // 侧边栏配置，需要展示的侧边栏需要在这里配置
-      '/dsalg-java-hsp/': dsalgJavaHspSC()
+      '/java-study/': dsalgJavaHspSC()
     }
   },
   plugins: [
